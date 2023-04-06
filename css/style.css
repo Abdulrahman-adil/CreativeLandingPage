@@ -1,0 +1,79 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+ul, li {
+  list-style: none;
+}
+
+body {
+  background-color: #333;
+}
+
+.container header {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+}
+.container header .logo {
+  width: 100%;
+}
+.container header .logo img {
+  width: 50px;
+}
+.container header .links {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+}
+.container header .links .active {
+  background: #c70202;
+}
+.container header .links li {
+  padding: 7px;
+  border-radius: 7px;
+  text-align: center;
+}
+.container header .links li a {
+  color: #fff;
+  text-decoration: none;
+}
+.container header .links li:hover {
+  background: #c70202;
+}
+.container .content {
+  align-items: center;
+  justify-content: space-between;
+}
+.container .content .text {
+  width: 40%;
+  color: #fff;
+}
+.container .content .text button {
+  padding: 10px;
+  border-radius: 7px;
+  width: 106px;
+}
+.container .content .img img {
+  width: 300px;
+}
+.container .slide {
+  margin-top: 50px;
+  position: relative;
+}
+.container .slide ul {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.container .slide ul li {
+  transition: ease-in-out 0.3s;
+}
+.container .slide ul li img {
+  width: 70px;
+}
+.container .slide ul li:hover {
+  transform: translateY(-10px);
+}/*# sourceMappingURL=style.css.map */

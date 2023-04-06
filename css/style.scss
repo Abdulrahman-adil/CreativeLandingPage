@@ -3,3 +3,83 @@
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
 }
+ul,li{
+    list-style: none;
+}
+body{
+    background-color: #333;
+}
+.container{
+    header{
+        display: flex;
+        align-items: center;
+        padding: 12px 0;
+        .logo{
+            width: 100%;
+            img{
+                   width: 50px;
+
+            }
+        }
+        .links{
+            display: flex;
+            gap: 10px;
+            margin: 0;
+            .active{
+                background: #c70202;
+            }
+            li{
+               
+                padding: 7px;
+                border-radius: 7px;
+                // width: 70px;
+                text-align: center;
+                a{
+                    color: #fff;
+                    text-decoration: none;
+                }
+                &:hover{
+                background: #c70202;
+
+                }
+            }
+        }
+    }
+    .content{
+        align-items: center;
+        justify-content: space-between;
+        .text{
+            width: 40%;
+            color: #fff;
+            button{
+                padding: 10px;
+                border-radius: 7px;
+                width: 106px;
+            }
+        }
+        .img{
+            img{
+                width: 300px;
+
+            }
+        }
+    }
+    .slide{
+        margin-top: 50px;
+        position: relative;
+        ul{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            li{
+                transition: ease-in-out 0.3s;
+                img{
+                    width:70px ;
+                }
+                &:hover{
+                    transform: translateY(-10px); 
+                }
+            }
+        }
+    }
+}
